@@ -1,0 +1,55 @@
+body {
+    width: 100vw;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+    background-color: white;
+    margin: 0;
+}
+.main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    margin-top: 30px;
+    width: 250px;
+    height: 75px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+    margin-top: 30px;
+}
+.nav_box {
+  width: 20vw;
+  text-align: center;
+  transition: 0.4s
+}
+.nav_box:hover {
+  color: white;
+  background-color: black;
+  transition: 0.4s;
+}
+article {
+  width: 65vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 2px;
+  border-style: solid;
+  background-color: white;
+  margin-top: 30px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
