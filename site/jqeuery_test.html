@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+    <form action="">
+        <input type="button" value="tja" class="tja">
+    </form>
+    <div class="panel1">
+        <p class="thisp">hi</p>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+
+
+        // });
+        $(function() {
+    
+            // $('.panel1').css({color: "red"});
+            // $(".panel1").html("hello <p>This is a new p</p>");
+            // $(".tja").on("click", function() {
+            //     $(".panel1").slideToggle(800)
+            // });
+            // $(".tja").on("mouseover", function() {
+            //     $(".panel1 .thisp").html("New p now")
+            // });
+            $(".tja").on("click", function(){
+                $(".panel1").animate({width: "200px", height: "200px"});
+            });
+            
+        });
+    </script>
+</body>
+</html>
