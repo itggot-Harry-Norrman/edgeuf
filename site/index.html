@@ -9,10 +9,17 @@
   </head>
   <body>
     <div class="main_con">
+<<<<<<< HEAD
       <nav> 
             <div class="nav_box box_color">
                 <img src="./img/edge.png" alt="" class="log_sz">
              </div>
+=======
+      <nav>
+          <div class="nav_box white">
+            <img src="./img/edge_ico.png" alt="" class="log_sz">
+          </div>
+>>>>>>> 8dc6c5edc0faed036cb4edc9427c6a405da07bdb
             <div class="nav_box">
               <h3>Start</h3>
             </div>
@@ -26,11 +33,36 @@
               <h3>Journal</h3>
             </div>
       </nav>
+      <img src="./img/background.png" alt="" class="background">
       <section>
-        <article class="">
+      <article class="art_1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fugit magnam deserunt commodi dolore possimus iste aut. Amet, sed, doloribus eum et libero quibusdam exercitationem quis possimus quam itaque nihil!</p>
+        </article>
+        <article class="art_2">
 
         </article>
       </section>
     </div>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function(){
+        
+        $(window).scroll(function() {
+          
+              if ($(window).scrollTop()>0)
+               {
+                  $('.log_sz').stop().animate({height: "0px", width: "0px"}, 300);
+                  $("nav").stop().animate({height: "65px"});
+               }
+              else
+               {
+                $('.log_sz').animate({height: "100px", width: "100px"}, 300);
+                $("nav").animate({height: "100px"});
+               }
+           });
+          
+      
+      });
+    </script>
   </body>
 </html>
