@@ -10,9 +10,12 @@
   <body>
     <div class="main_con">
       <nav> 
-            <div class="nav_box white">
+            <div class="nav_box white" id="ico_1">
                 <img src="./img/edge.png" alt="" class="log_sz">
              </div>
+             <div class="nav_box">
+              <div class="text" id="ico_2"></div>
+            </div>
             <div class="nav_box">
               <h3>Start</h3>
             </div>
@@ -49,16 +52,19 @@
                {
                  $("nav").stop().animate({height: "65px"}, 300);
                  $('.log_sz').stop().animate({height: "0px", width: "0px"}, 200);
-               }
-              else
-               {
-                 $("nav").animate({height: "100px"}, 300);
-                 $('.log_sz').animate({height: "100px", width: "100px"}, 200);
+                 $("#ico_2").fadeOut(200)
+                }
+                else
+                {
+                  $("nav").animate({height: "100px"}, 300);
+                  $('.log_sz').animate({height: "100px", width: "100px"}, 200);
+                  $("#ico_2").fadeIn(200)
                }
            });
           
       
       });
     </script>
+    <script src="./js/scramble.js"></script>
   </body>
 </html>
