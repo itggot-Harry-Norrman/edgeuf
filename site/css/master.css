@@ -65,15 +65,19 @@ section {
 .art_1 {
   z-index: 5;
   height: 80vh;
+<<<<<<< HEAD
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+=======
+>>>>>>> f73e21c3571614796eab45de80afc360d42a04d9
 }
 .art_2 {
   z-index: 5;
   height: 80vh;
+<<<<<<< HEAD
   width: 100vw;
   background-color: white;
 }
@@ -82,6 +86,9 @@ section {
   height: 80vh;
   width: 100vw;
   background-color: rgba(213, 214, 210);
+=======
+  background-color: #D5D6D2;
+>>>>>>> f73e21c3571614796eab45de80afc360d42a04d9
 }
 .panel1 {
   position: fixed;
@@ -93,6 +100,7 @@ section {
   width: 10vw;
   height: 10vw;
 }
+<<<<<<< HEAD
 .button {
   border: 2px solid white;
   width: 250px;
@@ -105,3 +113,5 @@ section {
   background-color: rgba(255, 123, 0, 0.5);
   transition: 0.3s;
 }
+=======
+>>>>>>> f73e21c3571614796eab45de80afc360d42a04d9

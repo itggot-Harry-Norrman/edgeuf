@@ -47,13 +47,13 @@
           
               if ($(window).scrollTop()>0)
                {
-                  $('.log_sz').stop().animate({height: "0px", width: "0px"}, 300);
-                  $("nav").stop().animate({height: "65px"});
+                 $("nav").stop().animate({height: "65px"}, 300);
+                 $('.log_sz').stop().animate({height: "0px", width: "0px"}, 200);
                }
               else
                {
-                $('.log_sz').animate({height: "100px", width: "100px"}, 300);
-                $("nav").animate({height: "100px"});
+                 $("nav").animate({height: "100px"}, 300);
+                 $('.log_sz').animate({height: "100px", width: "100px"}, 200);
                }
            });
           
