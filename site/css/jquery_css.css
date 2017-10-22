@@ -53,9 +53,11 @@
   }
   .white {
     background-color: white;
+    color: black;
   }
   .white:hover {
     background-color: white;
+    color: black;
   }
   .background {
     position: absolute;
@@ -69,8 +71,11 @@
   }
   .art_2 {
     z-index: 5;
-    height: 80vh;
+    height: 100vh;
     background-color: #D5D6D2;
+  }
+  .art_text {
+    margin-top: 100px;
   }
   .panel1 {
     position: fixed;
@@ -83,18 +88,25 @@
     height: 10vw;
   }
   .dud{
-  color #757575;
+    color: #757575;
   }
   .container {
-  height 100%;
-  width 100%;
-  justify-content center;
-  align-items center;
-  display flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   }
   
   .text{
-  font-weight 100;
-  font-size 50px;
-  color #FAFAFA;
+  font-weight: 100;
+  font-size: 50px;
+  color: #000000;
+  }
+  .hidden {
+  display: none;
+  }
+  .hideme
+  {
+  opacity:0;
   }

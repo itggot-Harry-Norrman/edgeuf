@@ -57,14 +57,14 @@ section {
   background-color: white;
 }
 .background {
-  position: absolute;
+  position: fixed;
   top: 0px;
   z-index: 0;
   width: 100vw;
 }
 .art_1 {
   z-index: 5;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -75,13 +75,17 @@ section {
   z-index: 5;
   height: 80vh;
   width: 100vw;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.art_text {
+  color: white;
+  width: 50vw;
 }
 .art_3 {
   z-index: 5;
   height: 80vh;
   width: 100vw;
-  background-color: rgba(213, 214, 210);
+  background-color: rgba(0, 0, 0, 0.8)
 }
 .panel1 {
   position: fixed;
@@ -108,4 +112,21 @@ section {
 .text {
   font-size: 2em;
   font-weight: bold;
+}
+.hideme {
+opacity:0;
+}
+.art_boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.art_img {
+  width: 40vw;
+  height: 60vh;
+  background-color: white;
+  opacity: 0.5;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
