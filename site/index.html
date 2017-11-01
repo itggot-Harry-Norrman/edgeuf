@@ -14,16 +14,16 @@
                 <img src="./img/edge.png" alt="" class="log_sz">
                 <div class="text hidden" id="ico_2"></div>
              </div>
-            <div class="nav_box">
+            <div class="nav_box" id="button1">
               <h3>Start</h3>
             </div>
-            <div class="nav_box">
-              <h3>Info</h3>
+            <div class="nav_box" id="button2">
+              <h3>Om oss</h3>
             </div>
-            <div class="nav_box">
+            <div class="nav_box" id="button3">
               <h3>Kontakt</h3>
             </div>
-            <div class="nav_box">
+            <div class="nav_box" id="button4">
               <h3>Journal</h3>
             </div>
       </nav>
@@ -85,21 +85,35 @@
 
         $(window).scroll(function() {
 
-              if ($(window).scrollTop()>0)
-               {
-                 $("nav").stop().animate({height: "65px"}, 300);
-                 $('.log_sz').stop().animate({height: "0px", width: "0px"}, 400);
-                //  $("#ico_2").stop().fadeIn(200).delay(200);
-                }
-                else
-                {
-                  $("nav").animate({height: "100px"}, 300);
-                  $('.log_sz').stop().animate({height: "100px", width: "100px"}, 400);
-                //  $("#ico_2").stop().fadeOut(200);
-               }
-           });
-
-
+          //     if ($(window).scrollTop()>0)
+          //      {
+          //        $("nav").stop().animate({height: "65px"}, 300);
+          //        $('.log_sz').stop().animate({height: "0px", width: "0px"}, 400);
+          //       //  $("#ico_2").stop().fadeIn(200).delay(200);
+          //       }
+          //       else
+          //       {
+          //         $("nav").animate({height: "100px"}, 300);
+          //         $('.log_sz').stop().animate({height: "100px", width: "100px"}, 400);
+          //       //  $("#ico_2").stop().fadeOut(200);
+          //      }
+          //  });
+          $(window).scroll(function () {
+    var scrollh = $(this).scrollTop();
+    if (scrollh == 0) {
+        $("nav").css({
+          'transition':'0.5s' , 'height':'100px;' , 
+        });
+        $("nav").css({
+          'transition':'none'
+        }, 500);
+    } else {
+        $("nav").stop().css({
+           'transition':'0.5s' , 'height':'65px',
+        });
+    }
+    });
+        });
       });
     </script>
     <script src="./js/fadein.js"></script>
