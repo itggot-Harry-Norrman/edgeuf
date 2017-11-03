@@ -90,9 +90,12 @@ section {
 }
 .art_3 {
   z-index: 5;
-  height: 80vh;
+  height: 50vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.8)
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center
 }
 .panel1 {
   position: fixed;
@@ -164,8 +167,20 @@ opacity:0;
   color: white;
 }
 .round {
-  height: 100px;
-  width: 100px;
+  width: 13vh;
+  height: 13vh;
   border-radius: 50%;
   background-color: white;
+}
+.boxboy p {
+  color: white;
+  width: 45vw;
+  text-align: center;
+  margin: 10px;
+}
+.imgboy {
+  width: 45vw;
+  height: 45vh;
+  background-color: white;
+  opacity: 0.5;
 }
