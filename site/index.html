@@ -18,21 +18,18 @@
               <h3>Start</h3>
             </div>
             <div class="nav_box" id="button2">
-              <h3>Om oss</h3>
-            </div>
-            <div class="nav_box" id="button3">
               <h3>Kontakt</h3>
             </div>
-            <div class="nav_box" id="button4">
-              <h3>Journal</h3>
+            <div class="nav_box" id="button3">
+              <h3>Om oss</h3>
             </div>
       </nav>
       <img src="./img/background3.jpg" alt="" class="background">
       <section>
-      <article class="art_1">
+      <article class="art_1" id="article1">
           <div class="button"><h3>Button</h3></div>
         </article>
-        <article class="art_2">
+        <article class="art_2" id="tja_gubbar">
           <div class="us">
             <div class="round">
 
@@ -74,7 +71,7 @@
                   </div>
           </div>
         </article>
-        <article class="art_3">
+        <article class="art_3" id="tja_gubbar2">
           <div class="boxboy">
             <p>The standard Lorem Ipsum passage, used since the 1500s
                 
@@ -105,6 +102,9 @@
           <div class="boxboy imgboy">
           </div>
         </article>
+        <article class="art_4">
+
+        </article>
       </section>
       <script src="./js/jquery-3.2.1.min.js"></script>
     <script>
@@ -128,6 +128,21 @@
         });
     }
     });
+    $("#button1").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $("#article1").offset().top - "65" + "px"
+    }, 1000);
+});
+    $("#button2").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $("#tja_gubbar").offset().top - "65" + "px"
+    }, 1000);
+});
+$("#button3").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $("#tja_gubbar2").offset().top - "65" + "px"
+    }, 1000);
+});
       });
     </script>
     <script src="./js/fadein.js"></script>
