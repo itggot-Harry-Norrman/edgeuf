@@ -43,8 +43,8 @@ nav {
   color: white;
 }
 .log_sz {
-  height: 100px;
   widows: 100px;
+  transition: 0.5s;
 }
 section {
   width: 100vw;
