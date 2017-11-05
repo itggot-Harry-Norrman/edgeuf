@@ -87,33 +87,13 @@
         </article>
         <article class="art_3" id="tja_gubbar2">
           <div class="boxboy">
-            <!-- <p>The standard Lorem Ipsum passage, used since the 1500s
-                
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                occaecat cupidatat non proident, sunt in culpa qui 
-                officia deserunt mollit anim id est laborum."</p>
-                <p>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-                    quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                    cta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
-                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
-                    eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
-                    qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
-                    , sed quia non numquam eius modi tempora incidunt ut labore et
-                     dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
-                     veniam, quis nostrum exercitationem ullam corporis suscipit 
-                     laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
-                     autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                      quam nihil molestiae consequatur, 
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p> -->
+            <div class="ico_box"><img src="./img/home.svg" alt="" class="ico_opc"></div>
+            <div class="text_box"><p>Vi på Edge UF har en vision. Vi vill kunna ge så många små 
+              företag som möjligt en chans att stå ut med en sida som både har en stilren design och är lättadministrerad.</p></div>
           </div>
-          <div class="boxboy imgboy">
+          <div class="boxboy">
+              <div class="ico_box"><img src="./img/basket.svg" alt="" class="ico_opc"></div>
+              <div class="text_box"><p></p></div>
           </div>
         </article>
         <article class="art_4">
@@ -133,7 +113,6 @@
         $(".log_sz").css({
           'height':'100px;' , 'width':'100px',
         });
-        $(".mobile_here").show(2000);
     } else {
         $("nav").stop().css({
            'transition':'0.5s' , 'height':'65px',
@@ -141,7 +120,6 @@
         $(".log_sz").css({
           'height':'0px;' , 'width':'0px' ,
         });
-        $(".mobile_here").stop().hide(100);
     }
     });
     $(".button1").click(function() {
