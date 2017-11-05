@@ -14,27 +14,27 @@
                 <img src="./img/edge.png" alt="" class="log_sz" style="height:100px; width:100px">
                 <!-- <div class="text hidden" id="ico_2"></div> -->
              </div>
-            <div class="nav_box" id="button1">
+            <div class="nav_box button1" id="">
               <h3>Start</h3>
             </div>
-            <div class="nav_box" id="button2">
+            <div class="nav_box button2" id="">
               <h3>Kontakt</h3>
             </div>
-            <div class="nav_box" id="button3">
+            <div class="nav_box button3" id="">
               <h3>Om oss</h3>
             </div>
       </nav>
       <div class="mob_nav">
-        <div class="nav_box" id="ico_1">
+        <div class="icon_mob">
           <div class="text hidden" id="ico_3"></div>
        </div>
-      <div class="nav_box" id="button1">
+      <div class="mobile_here button1" id="">
         <h3>Start</h3>
-      </div>
-      <div class="nav_box" id="button2">
+      </div> 
+      <div class="mobile_here button2" id="">
         <h3>Kontakt</h3>
       </div>
-      <div class="nav_box" id="button3">
+      <div class="mobile_here button3" id="">
         <h3>Om oss</h3>
       </div>
       </div>
@@ -133,6 +133,7 @@
         $(".log_sz").css({
           'height':'100px;' , 'width':'100px',
         });
+        $(".mobile_here").slideUp(2000);
     } else {
         $("nav").stop().css({
            'transition':'0.5s' , 'height':'65px',
@@ -140,19 +141,20 @@
         $(".log_sz").css({
           'height':'0px;' , 'width':'0px' ,
         });
+        $(".mobile_here").stop().slideDown(2000);
     }
     });
-    $("#button1").click(function() {
+    $(".button1").click(function() {
     $('html, body').stop().animate({
         scrollTop: $("#article1").offset().top - "65" + "px"
     }, 1000);
 });
-    $("#button2").click(function() {
+    $(".button2").click(function() {
     $('html, body').stop().animate({
         scrollTop: $("#tja_gubbar").offset().top - "65" + "px"
     }, 800);
 });
-$("#button3").click(function() {
+$(".button3").click(function() {
     $('html, body').stop().animate({
         scrollTop: $("#tja_gubbar2").offset().top - "65" + "px"
     }, 800);

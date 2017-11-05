@@ -203,9 +203,27 @@ opacity:0;
   }
   .mob_nav {
     display: block;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
   }
-  .nav_box {
-    height: 55px;
+  .mobile_here {
+    height: 35px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: 0.3s;
+  }
+  .mobile_here:active {
+    background-color: #FF8D3F;
+    color: white;
+    transition: 0.3s;
+  }
+  .icon_mob {
+    height: 45px;
     width: 100vw;
     display: flex;
     flex-direction: row;
