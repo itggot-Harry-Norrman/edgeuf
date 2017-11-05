@@ -133,7 +133,7 @@
         $(".log_sz").css({
           'height':'100px;' , 'width':'100px',
         });
-        $(".mobile_here").slideUp(2000);
+        $(".mobile_here").show(2000);
     } else {
         $("nav").stop().css({
            'transition':'0.5s' , 'height':'65px',
@@ -141,7 +141,7 @@
         $(".log_sz").css({
           'height':'0px;' , 'width':'0px' ,
         });
-        $(".mobile_here").stop().slideDown(2000);
+        $(".mobile_here").stop().hide(100);
     }
     });
     $(".button1").click(function() {
