@@ -24,6 +24,20 @@
               <h3>Om oss</h3>
             </div>
       </nav>
+      <div class="mob_nav">
+        <div class="nav_box" id="ico_1">
+          <div class="text hidden" id="ico_3"></div>
+       </div>
+      <div class="nav_box" id="button1">
+        <h3>Start</h3>
+      </div>
+      <div class="nav_box" id="button2">
+        <h3>Kontakt</h3>
+      </div>
+      <div class="nav_box" id="button3">
+        <h3>Om oss</h3>
+      </div>
+      </div>
       <img src="./img/background3.jpg" alt="" class="background">
       <section>
       <article class="art_1" id="article1">
@@ -73,7 +87,7 @@
         </article>
         <article class="art_3" id="tja_gubbar2">
           <div class="boxboy">
-            <p>The standard Lorem Ipsum passage, used since the 1500s
+            <!-- <p>The standard Lorem Ipsum passage, used since the 1500s
                 
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -97,7 +111,7 @@
                      laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
                      autem vel eum iure reprehenderit qui in ea voluptate velit esse
                       quam nihil molestiae consequatur, 
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p> -->
           </div>
           <div class="boxboy imgboy">
           </div>
@@ -136,12 +150,12 @@
     $("#button2").click(function() {
     $('html, body').stop().animate({
         scrollTop: $("#tja_gubbar").offset().top - "65" + "px"
-    }, 1000);
+    }, 800);
 });
 $("#button3").click(function() {
     $('html, body').stop().animate({
         scrollTop: $("#tja_gubbar2").offset().top - "65" + "px"
-    }, 1000);
+    }, 800);
 });
       });
     </script>

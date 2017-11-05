@@ -17,6 +17,9 @@ body {
   align-items: center;
   width: 100vw;
 }
+.mob_nav {
+  display: none;
+}
 nav {
   position: fixed;
   z-index: 9999;
@@ -61,7 +64,7 @@ section {
   position: fixed;
   top: 0px;
   z-index: 0;
-  width: 100vw;
+  width: 2560px;
 }
 .art_1 {
   z-index: 5;
@@ -184,4 +187,30 @@ opacity:0;
 .art_4 {
   height: 60vh;
   background-color: rgba(0, 0, 0, 0.8)
+}
+@media only screen and (max-width: 425px) {
+  .background {
+    position: fixed;
+    top: -400px;
+    z-index: 0;
+    width: 3840px;
+  }
+  nav {
+    display: none;
+  }
+  .art_2 {
+    display: none;
+  }
+  .mob_nav {
+    display: block;
+  }
+  .nav_box {
+    height: 55px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
 }
