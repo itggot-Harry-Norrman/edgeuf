@@ -268,3 +268,39 @@ opacity:0;
     text-align: center;
   }
 }
+@media only screen and (min-width: 2560px) {
+  .background {
+    width: 100vw;
+  }
+  nav {
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 200px;
+    overflow: hidden;
+  }
+  .nav_box {
+    height: 200px;
+  }
+  h3 {
+    font-size: 3.5em;
+  }
+  .button {
+    width: 15vw;
+  }
+  p {
+    font-size: 2em;
+  }
+  .ico_opc {
+    opacity: 0.6;
+    height: 150px;
+    width: 150px;
+  }
+  .ico_box {
+    height: 150px;
+  }
+}
