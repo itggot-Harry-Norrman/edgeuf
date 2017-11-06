@@ -100,8 +100,8 @@ section {
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
 }
 .panel1 {
   position: fixed;
@@ -115,10 +115,11 @@ section {
 }
 .con_button {
   border: 2px solid white;
-  width: 250px;
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
   transition: 0.3s;
 }
 .con_button:hover {
@@ -179,7 +180,7 @@ opacity:0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80vw;
+  width: 85vw;
 }
 .ico_box {
   width: 40vw;
@@ -231,6 +232,10 @@ a {
   align-items: center;
   opacity: 0.2;
 }
+.line {
+  width: 1px;
+  background-color: white;
+}
 @media only screen and (max-width: 425px) {
   .background {
     position: fixed;
@@ -242,6 +247,9 @@ a {
     opacity: 0.6;
     height: 45px;
     width: 45px;
+  }
+  body {
+    overflow-x: hidden;
   }
   nav {
     display: none;
@@ -281,6 +289,7 @@ a {
   }
   .art_3 {
     z-index: 5;
+    height: 60vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
