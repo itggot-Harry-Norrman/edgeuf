@@ -99,7 +99,7 @@ section {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
@@ -175,15 +175,22 @@ opacity:0;
   border-radius: 50%;
   background-color: white;
 }
-.boxboy {
+.about_box {
   display: flex;
-  flex-direction: column;
-  align-items: center
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80vw;
 }
-.boxboy p {
-  color: white;
-  width: 45vw;
+.ico_box {
+  width: 40vw;
   text-align: center;
+}
+.about_box p {
+  color: white;
+  text-align: center;
+}
+.text_box {
+  width: 40vw;
 }
 .imgboy {
   width: 45vw;
@@ -274,16 +281,14 @@ a {
   }
   .art_3 {
     z-index: 5;
-    height: 60vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
     padding-top: 10px;
   }
-  .boxboy p {
+  .about_box p {
     color: white;
     width: 100vw;
     text-align: center;
