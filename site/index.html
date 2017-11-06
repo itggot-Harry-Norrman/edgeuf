@@ -41,12 +41,13 @@
       <img src="./img/background3.jpg" alt="" class="background">
       <section>
       <article class="art_1" id="article1">
-          <div class="button"><h3>Kontakta oss!</h3></div>
+          <div class="con_button"><h3>Kontakta oss!</h3></div>
         </article>
         <article class="art_2" id="tja_gubbar">
+          <div class="coming_s"><h2>Coming soon</h2></div>
+          <div class="con_box">
           <div class="us">
             <div class="round">
-
             </div>
             <div class="our_text">
               <p>Kontakta oss</p>
@@ -54,7 +55,6 @@
           </div>
           <div class="us">
             <div class="round">
-
             </div>
             <div class="our_text">
                 <p>Kontakta oss</p>
@@ -62,7 +62,6 @@
           </div>
           <div class="us">
               <div class="round">
-
                 </div>
                 <div class="our_text">
                     <p>Kontakta oss</p>
@@ -70,7 +69,6 @@
           </div>
           <div class="us">
               <div class="round">
-
                 </div>
                 <div class="our_text">
                     <p>Kontakta oss</p>
@@ -78,12 +76,12 @@
           </div>
           <div class="us">
               <div class="round">
-
                 </div>
                 <div class="our_text">
                     <p>Kontakta oss</p>
                   </div>
           </div>
+        </div>
         </article>
         <article class="art_3" id="tja_gubbar2">
           <div class="boxboy">
@@ -96,10 +94,10 @@
               <div class="text_box"><p></p></div>
           </div>
         </article>
-        <article class="art_4">
+        <article class="art_4" id="art4">
           <div class="contact_inf">
             <div class="con_row">
-              <p></p>
+              <p>Mail: julia.bergdahl@itggot.se</p>
             </div>
             <div class="con_row">
 
@@ -147,6 +145,11 @@ $(".button3").click(function() {
     $(".button4").click(function() {
     $('html, body').stop().animate({
         scrollTop: $("#tja_gubbar2").offset().top - "150" + "px"
+    }, 800);
+});
+$(".con_button").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $("#art4").offset().top - "150" + "px"
     }, 800);
 });
       });
