@@ -40,6 +40,7 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: white;
+  transition: 0.4s;
 }
 .nav_box:hover {
   background-color: #FF8D3F;
@@ -139,7 +140,6 @@ section {
 .hideme {
 opacity:0;
 }
-
 .art_boxes {
   display: flex;
   flex-direction: row;
@@ -176,12 +176,20 @@ opacity:0;
 }
 .our_text {
   color: white;
+  text-align: center;
 }
 .round {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 13vh;
   height: 13vh;
   border-radius: 50%;
-  background-color: white;
+}
+.acc_icon {
+  width: 13vh;
+  height: 13vh;
 }
 .about_box {
   display: flex;
@@ -199,6 +207,7 @@ opacity:0;
 }
 .text_box {
   width: 40vw;
+  transition: 0.5s;
 }
 .imgboy {
   width: 45vw;
@@ -403,5 +412,10 @@ a {
   }
   .ico_box {
     height: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .tru_inf {
+    width: 80vw;
   }
 }
