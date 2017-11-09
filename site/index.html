@@ -150,7 +150,14 @@
     <script>
       $(function(){
         $("#ico_2").fadeOut()
-          $(window).scroll(function () {
+          $(window).scroll(function () { 
+            $('.hideme').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){ 
+                $(this).animate({'opacity':'1'},500);
+            }
+         })
     var scrollh = $(this).scrollTop();
     if (scrollh == 0) {
         $("nav").css({
@@ -193,27 +200,8 @@ $(".con_button").click(function() {
         scrollTop: $("#art4").offset().top - "150" + "px"
     }, 800);
 });
-$(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
-            }
-            
-         }); 
-    
-         });
       });
     </script>
-    <script src="./js/fadein.js"></script>
     <script src="./js/scramble.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </body>
